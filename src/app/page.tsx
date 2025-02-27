@@ -47,7 +47,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.2 }}
             >
-              I&aposM <span className="text-yellow-500">VISHAL MUNIRAJ</span>
+              I'M <span className="text-yellow-500">VISHAL MUNIRAJ</span>
             </motion.h1>
 
             <motion.p 

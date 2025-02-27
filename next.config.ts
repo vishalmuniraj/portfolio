@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export', // Enables static export
-  basePath: '/portfolio', // Must match the GitHub repo name
-  assetPrefix: '/portfolio/', // Ensures assets load correctly
+  basePath: process.env.NODE_ENV === "production" ? "/portfolio" : "", // Use basePath only in production
+  assetPrefix: process.env.NODE_ENV === "production" ? "/portfolio/" : "", // Use assetPrefix only in production
 };
 
 module.exports = nextConfig;
